@@ -71,7 +71,7 @@ class Activity extends Model
     protected $casts = [
         'description'   => 'string',
         'details'       => 'string',
-        'user'          => 'integer',
+        'user'          => 'string',
         'route'         => 'string',
         'ipAddress'     => 'string',
         'userAgent'     => 'string',
@@ -138,7 +138,7 @@ class Activity extends Model
                 'description'   => 'required|string',
                 'details'       => 'nullable|string',
                 'userType'      => 'required|string',
-                'userId'        => 'nullable|integer',
+                'userId'        => 'nullable|string',
                 'route'         => 'nullable|'.$route_url_check,
                 'ipAddress'     => 'nullable|ip',
                 'userAgent'     => 'nullable|string',
